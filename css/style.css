@@ -1,0 +1,800 @@
+* {
+ padding: 0%;
+ margin: 0%;
+ font-family: "Maven Pro";
+}
+
+nav {
+ background: linear-gradient(135deg, white, #2c2c2c79);
+ backdrop-filter: blur(10px);
+ box-shadow: 0 8px 32px 0 #0000005e;
+ border-bottom: 1px solid #ffffff2e;
+ border-radius: 0px 0px 10px 10px;
+ z-index: 1000;
+ height: 60px;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ position: fixed;
+}
+
+nav #logo {
+ width: 150px;
+ position: absolute;
+ left: 10px;
+ top: 50%;
+ transform: translateY(-50%);
+ margin-left: 20px;
+}
+
+nav #espana {
+ width: 30px;
+ position: absolute;
+ right: 10px;
+ top: 25px;
+ transform: translateY(-50%);
+ margin-right: 20px;
+}
+
+nav #inglaterra {
+ width: 30px;
+ position: absolute;
+ right: 50px;
+ top: 25px;
+ transform: translateY(-50%);
+ margin-right: 20px;
+}
+
+nav ul li {
+ display: inline-block;
+ font-weight: 500;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #16151b;
+ margin: 0 15px;
+ font-size: 16px;
+ letter-spacing: 1px;
+ position: relative;
+ display: inline-block;
+}
+
+nav ul li:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background: #16151b;
+ top: 100%;
+ animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+nav ul li:hover:before {
+ animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@keyframes in {
+ 0% {
+  width: 0;
+  left: 0;
+  right: auto;
+ }
+ 100% {
+  left: 0;
+  right: auto;
+  width: 100%;
+ }
+}
+@keyframes out {
+ 0% {
+  width: 100%;
+  left: auto;
+  right: 0;
+ }
+ 100% {
+  width: 0;
+  left: auto;
+  right: 0;
+ }
+}
+@keyframes show {
+ 0% {
+  opacity: 0;
+  transform: translateY(-10px);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+ }
+}
+
+/* ================================================================= header styles =================================================================*/
+
+header {
+ width: 100%;
+ height: 100vh;
+ background-image: url("../Imagenes/Portada.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+header h1 {
+ position: absolute;
+ bottom: 100px;
+ left: 50px;
+ display: block;
+ color: white;
+ font-size: 50px;
+ font-weight: 700;
+ /*font-family: ;*/
+}
+
+header p {
+ position: absolute;
+ bottom: 80px;
+ left: 50px;
+ display: block;
+ color: white;
+}
+
+/* ================================================================= main styles =================================================================*/
+
+#feature {
+ margin: 10px 0 0 10px;
+}
+
+#Featuredcategories {
+ display: flex;
+}
+
+#Featuredcategories h3 {
+ position: absolute;
+ bottom: 20px;
+ left: 10px;
+ color: white;
+}
+
+#Featuredcategories section {
+ position: relative;
+ margin: 10px;
+}
+
+main img {
+ width: 100%;
+ border-radius: 5px;
+ box-shadow: 0 8px 20px 0 #0000005e;
+}
+
+/*-------------------------------- Carrousel styles--------------------------------*/
+
+#carrousel {
+ display: flex;
+ position: relative;
+}
+
+#carrousel img {
+ width: 100%;
+ align-items: center;
+ margin: 10px;
+ border-radius: 5px;
+}
+
+#carrousel p {
+ position: absolute;
+ bottom: 50px;
+ left: 35px;
+ color: white;
+ font-size: 15px;
+}
+
+#carrousel h3 {
+ position: absolute;
+ bottom: 75px;
+ left: 35px;
+ color: white;
+ font-size: 50px;
+}
+
+/* ================================================================= main styles =================================================================*/
+
+#h2newtrending {
+ margin: 50px 0 0 10px;
+}
+
+#NewandTrending {
+ display: flex;
+ width: 100%;
+}
+#NewandTrending section {
+ width: 100%;
+}
+#NewandTrending section img {
+ width: 100%;
+}
+#NewandTrending .Cost {
+ position: absolute;
+ bottom: -20px;
+ left: 10px;
+ color: black;
+}
+
+#NewandTrending p {
+ position: absolute;
+ bottom: -55px;
+ left: 10px;
+ color: black;
+}
+
+#NewandTrending section {
+ position: relative;
+ margin: 15px;
+}
+
+/**************************************************************** The Journal ****************************************************************/
+
+#theJournal {
+ height: 450px;
+ width: 100%;
+ margin: 50px 0 0 0;
+}
+
+#theJournal h2 {
+ margin: 100px 0 15px 10px;
+}
+
+#chiron {
+ position: relative;
+ float: left;
+ width: 50%;
+ display: flex;
+}
+#chiron img {
+ width: 100%;
+ margin-left: 10px;
+}
+#chiron p {
+ width: 500px;
+}
+#chiron p:nth-child(2) {
+ color: white;
+ position: absolute;
+ bottom: 150px;
+ left: 20px;
+ font-size: 15px;
+}
+#chiron p:nth-child(3) {
+ color: white;
+ position: absolute;
+ bottom: 90px;
+ left: 20px;
+ font-size: 15px;
+}
+#chiron p:nth-child(4) {
+ color: white;
+ position: absolute;
+ bottom: 50px;
+ left: 20px;
+ font-size: 15px;
+}
+#noticias {
+ float: right;
+ width: 50%;
+}
+#noticias section {
+ margin: 30px 0 0 40px;
+}
+#noticias img {
+ float: left;
+ width: 160px;
+ margin: 0 20px 0 0;
+}
+#noticias section p {
+ color: black;
+ margin: 5px 0px 5px 15px;
+}
+/*---------------------------------------------------------------- As seen  */
+
+#asseen {
+ display: flex;
+ position: relative;
+ height: 300px;
+ font-size: 12px;
+ padding: 10px;
+ margin: 10px;
+ margin-top: 300px;
+ justify-content: center;
+ width: 300;
+}
+
+#textplusbarra {
+ position: absolute;
+ color: black;
+ width: 70%;
+ text-align: center;
+ bottom: 70%;
+ left: 15%;
+ right: 15%;
+}
+
+#marcas {
+ display: flex;
+}
+
+#marcas img {
+ height: 25px;
+ margin: 20px;
+ align-items: center;
+ margin-right: 150px;
+ bottom: 50px;
+ margin-top: 150px;
+ box-shadow: none;
+}
+
+/*---------------------------------------------------------------- Newsletter */
+#newsletter {
+ height: 200px;
+ position: relative;
+ display: flex;
+}
+#info h2 {
+ position: absolute;
+ color: black;
+ font-size: 30px;
+ top: 20px;
+ left: 20px;
+ margin-left: 15px;
+}
+#info p {
+ color: grey;
+ position: absolute;
+ font-size: 20px;
+ top: 70px;
+ left: 20px;
+ width: 500px;
+ margin-left: 15px;
+}
+#form input {
+ position: absolute;
+ top: 60px;
+ right: 20px;
+ height: 30px;
+ width: 250px;
+ border-radius: 5px;
+ background-color: white;
+ color: black;
+ border: solid grey 2px;
+ box-shadow: grey 2px 2;
+ margin-right: 100px;
+ box-shadow: 0 8px 20px 0 #0000005e;
+}
+#form button {
+ position: absolute;
+ top: 100px;
+ right: 20px;
+ height: 30px;
+ width: 254px;
+ border-radius: 5px;
+ background-color: black;
+ color: white;
+ margin-right: 100px;
+ box-shadow: 0 8px 20px 0 #0000005e;
+}
+#form p {
+ width: 250px;
+ position: absolute;
+ top: 140px;
+ color: black;
+ right: 20px;
+ margin-right: 100px;
+}
+
+/* ================================================================= footer styles =================================================================*/
+
+footer {
+ background-color: black;
+ position: relative;
+ height: 215px;
+ font-size: 12px;
+}
+
+footer p,
+footer h3 {
+ color: white;
+}
+
+footer section {
+ float: left;
+}
+
+#dreamycontact {
+ position: absolute;
+ float: left;
+ width: 50%;
+ padding: 10px;
+ margin: 10px;
+}
+
+#redessociales {
+ position: absolute;
+ bottom: 150px;
+ right: 50px;
+ margin-right: 100px;
+}
+
+#creativecomons {
+ position: absolute;
+ bottom: 10px;
+ right: 40px;
+ padding: 10px;
+ margin: 40px;
+ bottom: -10px;
+}
+
+#dream {
+ position: absolute;
+ float: left;
+ width: 50%;
+ padding: 10px;
+ margin: 10px;
+}
+
+#contact {
+ position: absolute;
+ float: left;
+ width: 50%;
+ padding: 10px;
+ margin: 10px;
+ bottom: -110px;
+}
+
+@media only screen and (max-width: 600px) {
+ /* Para móviles o pantallas con una resolución de 600px o menos */
+ /* Ajustamos las secciones para que ocupen el 100% del ancho */
+ #noticias section,
+ #newsletter section,
+ #marcas section {
+  width: 100%;
+ }
+
+ /* Centramos el texto */
+ #noticias section p,
+ #newsletter section p,
+ #marcas section p {
+  text-align: center;
+ }
+
+ /* Cambiamos el margen del botón */
+ #form button {
+  margin-right: 0;
+ }
+
+ /* Cambiamos el margen del texto del footer */
+ #creativecomons,
+ #redessociales,
+ #dreamycontact,
+ #dream,
+ #contact {
+  margin: 10px;
+ }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+ /* Para tablets con una resolución entre 601px y 1024px */
+ /* Cambiamos el margen del texto del footer */
+ #creativecomons,
+ #redessociales,
+ #dreamycontact,
+ #dream,
+ #contact {
+  margin: 30px;
+ }
+}
+
+@media only screen and (min-width: 1025px) {
+ /* Para computadoras de escritorio o dispositivos con una resolución superior a 1024px */
+ /* Restablecemos los valores iniciales */
+ #noticias section,
+ #newsletter section,
+ #marcas section {
+  width: 50%;
+ }
+
+ /* Restablecemos el margen del botón */
+ #form button {
+  margin-right: 100px;
+ }
+
+ /* Restablecemos el margen del texto del footer */
+ #creativecomons,
+ #redessociales,
+ #dreamycontact,
+ #dream,
+ #contact {
+  margin: 10px;
+ }
+}
+
+/* REDES SOCIALES */
+#redessociales {
+ display: flex;
+}
+
+/* Instagram */
+.BtnInsta {
+ z-index: 999;
+ width: 45px;
+ height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ background-color: transparent;
+ position: relative;
+ /* overflow: hidden; */
+ border-radius: 7px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.svgContainerInsta {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: transparent;
+ backdrop-filter: blur(4px);
+ letter-spacing: 0.8px;
+ border-radius: 10px;
+ transition: all 0.3s;
+ border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGInsta {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: #f09433;
+ background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+ background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+ background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ z-index: -1;
+ border-radius: 9px;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.BtnInsta:hover .BGInsta {
+ transform: rotate(35deg);
+ transform-origin: bottom;
+}
+
+.BtnInsta:hover .svgContainerInsta {
+ background-color: rgba(156, 156, 156, 0.466);
+}
+
+/* Facebook */
+
+.BtnFace {
+ margin-left: 10px;
+ z-index: 999;
+ width: 45px;
+ height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ background-color: transparent;
+ position: relative;
+ /* overflow: hidden; */
+ border-radius: 7px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.svgContainerFace {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: transparent;
+ backdrop-filter: blur(0px);
+ letter-spacing: 0.8px;
+ border-radius: 10px;
+ transition: all 0.3s;
+ border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGFace {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: #1877f2;
+ z-index: -1;
+ border-radius: 10px;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.BtnFace:hover .BGFace {
+ transform: rotate(35deg);
+ transform-origin: bottom;
+}
+
+.BtnFace:hover .svgContainerFace {
+ border: 1px solid rgba(230, 230, 230, 0.466);
+ background-color: rgba(204, 204, 204, 0.466);
+ backdrop-filter: blur(4px);
+}
+
+/* Linkedin */
+
+.BtnLink {
+ margin-left: 10px;
+ z-index: 999;
+ width: 45px;
+ height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ background-color: transparent;
+ position: relative;
+ /* overflow: hidden; */
+ border-radius: 7px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.svgContainerLink {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: transparent;
+ backdrop-filter: blur(0px);
+ letter-spacing: 0.8px;
+ border-radius: 10px;
+ transition: all 0.3s;
+ border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGLink {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: #0077b5;
+ z-index: -1;
+ border-radius: 10px;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.BtnLink:hover .BGLink {
+ transform: rotate(35deg);
+ transform-origin: bottom;
+}
+
+.BtnLink:hover .svgContainerLink {
+ border: 1px solid rgba(216, 216, 216, 0.466);
+ background-color: rgba(190, 190, 190, 0.466);
+ backdrop-filter: blur(4px);
+}
+
+/* Twitter */
+
+.BtnTwi {
+ margin-left: 10px;
+ z-index: 999;
+ width: 45px;
+ height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ background-color: transparent;
+ position: relative;
+ /* overflow: hidden; */
+ border-radius: 7px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.svgContainerTwi {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: transparent;
+ backdrop-filter: blur(0px);
+ letter-spacing: 0.8px;
+ border-radius: 10px;
+ transition: all 0.3s;
+ border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGTwi {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: #181818;
+ z-index: -1;
+ border-radius: 10px;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.BtnTwi:hover .BGTwi {
+ transform: rotate(35deg);
+ transform-origin: bottom;
+}
+
+.BtnTwi:hover .svgContainerTwi {
+ background-color: rgba(156, 156, 156, 0.466);
+ backdrop-filter: blur(4px);
+}
+
+/* Youtube */
+
+.BtnYou {
+ margin-left: 10px;
+ z-index: 999;
+ width: 45px;
+ height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ background-color: transparent;
+ position: relative;
+ /* overflow: hidden; */
+ border-radius: 7px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.svgContainerYou {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: transparent;
+ backdrop-filter: blur(0px);
+ letter-spacing: 0.8px;
+ border-radius: 10px;
+ transition: all 0.3s;
+ border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGYou {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: #ff0000;
+ z-index: -1;
+ border-radius: 10px;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.BtnYou:hover .BGYou {
+ transform: rotate(35deg);
+ transform-origin: bottom;
+}
+
+.BtnYou:hover .svgContainerYou {
+ border: 1px solid rgba(255, 110, 110, 0.466);
+ background-color: rgba(219, 219, 219, 0.466);
+ backdrop-filter: blur(4px);
+}
